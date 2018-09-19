@@ -1,0 +1,150 @@
+body {
+  @include font-size(16px);
+  @include line-height(24px, 16px);
+  font-family: $site_font;
+  color: $color_2;
+  background-color: $color_1;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+header  {
+  width: 100%;
+  box-shadow: 5px 0 20px rgba(28, 29, 45, .08);
+}
+.headerWrap {
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    min-width: 270px;
+  }
+  &__tab {
+  }
+}
+.logoWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 19px 0;
+  &:hover {
+    text-decoration: none;
+  }
+  &__img {
+    display: flex;
+    justify-content: flex-start;
+    width: 52px;
+    height: 52px;
+  }
+  &__txt {
+    margin-left: 19px;
+    &_little {
+      @include Proxima-Regular;
+      @include line-height(22px, 16px);
+      text-transform: uppercase;
+      color: $color_4;
+    }
+    &_big {
+      @include Proxima-Bold;
+      @include font-size(20px);
+      @include line-height(22px, 20px);
+      text-transform: uppercase;
+      color: $color_4;
+    }
+  }
+}
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1%;
+  margin-right: 3.3%;
+  &__item {
+  }
+}
+@media (max-width: 700px) {
+  .tabs {
+    flex-wrap: wrap;
+  }
+}
+.tabsTire,
+.tabsDisc,
+.tabsWheel {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid transparent;
+  width: 33.3%;
+  padding: 30px 0;
+  cursor: pointer;
+  &__icon {
+    display: flex;
+    border-left: 1px solid $color_5;
+  }
+  &__txt {
+    @include Proxima-Bold;
+    @include font-size(18px);
+    @include letter-spacing(.25px, 18px);
+    color: $color_6;
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .tabsTire,
+  .tabsDisc,
+  .tabsWheel {
+    width: 100%;
+    padding: 15px 0;
+  }
+  .tabsTire__icon,
+  .tabsDisc__icon,
+  .tabsWheel__icon{
+    border: none;
+  }
+}
+.tabsWheel__txt {
+  border-right: 1px solid $color_5;
+}
+@media (max-width: 700px) {
+  .tabsWheel__txt {
+    border: none
+  }
+}
+.tabsTire,
+.tabsDisc,
+.tabsWheel{
+  &__txt_active {
+    color: $color_7;
+  }
+}
+.tabsTire,
+.tabsDisc,
+.tabsWheel {
+  &_active {
+    border-bottom: 2px solid $color_8;
+  }
+}
+.tabsTire__icon{
+  padding: 0 8% 0 23%;
+}
+.tabsDisc__icon{
+  padding: 0 7% 0 19%;
+}
+.tabsWheel__icon {
+  padding: 0 7% 0 13%;
+}
+@media (max-width: 1042px){
+  .tabsTire__icon{
+    padding: 0 3.5% 0 9%;
+  }
+  .tabsDisc__icon{
+    padding: 0 3.5% 0 9%;
+  }
+  .tabsWheel__icon {
+    padding: 0 3.5% 0 9%;
+  }
+}
+
+
+
+
+
+

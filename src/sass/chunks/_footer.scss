@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: $color_9;
+}
+.copyright {
+  @include font-size(14px);
+  @include  line-height(25px, 14px);
+  color: $color_10;
+  margin: 15px 0 ;
+  position: relative;
+  &:before {
+    content: "\00A9";
+    position: absolute;
+    color: $color_10;
+    top: 0;
+    left: -15px;
+  }
+}

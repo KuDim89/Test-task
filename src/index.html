@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test task</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <div class="headerWrap__logo">
+                    <a class="logoWrap" href="#">
+                        <div class="logoWrap__img">
+                            <embed src="img/icons/logo.svg">
+                        </div>
+                        <div class="logoWrap__txt">
+                            <div class="logoWrap__txt_little">Шинный онлайн</div>
+                            <div class="logoWrap__txt_big">Калькулятор</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-9">
+                <div class="headerWrap__tab tabs">
+                    <div class="tabs__item tabsTire js-tabsTire">
+                        <div class="tabsTire__icon">
+                            <embed src="img/icons/tire.svg">
+                        </div>
+                        <div class="tabsTire__txt js-tabsTire__txt">Подбор шин</div>
+                    </div>
+                    <div class="tabs__item tabsDisc js-tabsDisc tabsDisc_active">
+                        <div class="tabsDisc__icon">
+                            <embed src="img/icons/disc.svg">
+                        </div>
+                        <div class="tabsDisc__txt js-tabsDisc__txt tabsDisc__txt_active ">Подбор дисков</div>
+                    </div>
+                    <div class="tabs__item tabsWheel js-tabsWheel">
+                        <div class="tabsWheel__icon">
+                            <embed src="img/icons/wheel.svg">
+                        </div>
+                        <div class="tabsWheel__txt js-tabsWheel__txt">Разборные колеса</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="content">
+    <div class="marketing">
+        <div class="marketing__icon">
+            <embed src="img/icons/adwords.svg">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="page1">
+                    <p> Таб з інформацією з підбору шин</p>
+                </div>
+                <div class="page2">
+                    <p> Таб з інформацією про розбірні колеса</p>
+                </div>
+                <div class="page">
+                    <div class="page__select">
+                        <div class="button__select js-head">Select</div>
+                        <div class="selectWrap js-body">
+                            <div class="selectWrap__left">
+                                <h5 class="selectTitle">Brand of your car</h5>
+                                <select class="select-chosen" name="brand" id="js-brand">
+                                    <option value="Mercedes">Mercedes</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="Opel">Opel</option>
+                                </select>
+                            </div>
+                            <div class="selectWrap__right">
+                                <h5 class="selectTitle">Brand of your car</h5>
+                                <select class="select-chosen" name="model" id="js-model">
+                                    <option value="A-205">A-205</option>
+                                    <option value="X1">X1</option>
+                                    <option value="Astra">Astra</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__calculate">
+                        <div class="button__calculate js-head">Calculate</div>
+                            <div class="tubCalculate js-body">
+                                <h5 class="selectTitle">Wheel Details (3-piece wheel / split rim)</h5>
+                                <div class="calculate_wrap">
+                                <div class="col-12 col-md-6">
+                                    <div class="calculate_left ">
+                                        <div class="itemFunc">
+                                            <div class="itemFunc__description">
+                                                <div class="itemFunc__description_txt">Original <span>outer</span> lip width (in.)</div>
+                                            </div>
+                                            <div class="inputCalculateWrap">
+                                                <input class="inputCalculate" value="0" type="text">
+                                                <object class="inputCalculate__minus" data="img/icons/minus.svg" type="image/svg+xml"></object>
+                                                <object class="inputCalculate__plus" data="img/icons/plus.svg" type="image/svg+xml"></object>
+                                                <div class="minus-trigger"></div>
+                                                <div class="plus-trigger"></div>
+                                            </div>
+                                        </div>
+                                        <div class="itemFunc">
+                                            <div class="itemFunc__description">
+                                                <div class="itemFunc__description_txt">Original <span>inner</span> barrel width (in.)</div>
+                                            </div>
+                                            <div class="inputCalculateWrap">
+                                                <input class="inputCalculate" value="0" type="text">
+                                                <object class="inputCalculate__minus" data="img/icons/minus.svg" type="image/svg+xml"></object>
+                                                <object class="inputCalculate__plus" data="img/icons/plus.svg" type="image/svg+xml"></object>
+                                                <div class="minus-trigger"></div>
+                                                <div class="plus-trigger"></div>
+                                            </div>
+                                        </div>
+                                        <div class="itemFunc">
+                                            <div class="itemFunc__description">
+                                                <div class="itemFunc__description_txt">Original <span>inner</span> barrel
+                                                    width (in.)
+                                                </div>
+                                            </div>
+                                            <div class="inputCalculateWrap">
+                                                <input class="inputCalculate" value="0" type="text">
+                                                <object class="inputCalculate__minus" data="img/icons/minus.svg" type="image/svg+xml"></object>
+                                                <object class="inputCalculate__plus" data="img/icons/plus.svg" type="image/svg+xml"></object>
+                                                <div class="minus-trigger"></div>
+                                                <div class="plus-trigger"></div>
+                                            </div>
+                                        </div>
+                                        <div class="itemFunc">
+                                            <div class="itemFunc__description">
+                                                <div class="itemFunc__description_txt">Original wheel offset (mm)</div>
+                                            </div>
+                                            <div class="inputCalculateWrap">
+                                                <input class="inputCalculate" value="0" type="text">
+                                                <object class="inputCalculate__minus" data="img/icons/minus.svg" type="image/svg+xml"></object>
+                                                <object class="inputCalculate__plus" data="img/icons/plus.svg" type="image/svg+xml"></object>
+                                                <div class="minus-trigger"></div>
+                                                <div class="plus-trigger"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="calculate_right">
+                                        <div class="itemFunc">
+                                            <div class="itemFunc__description">
+                                                <div class="itemFunc__description_txt">New <span>outer</span> lip width (in.)</div>
+                                            </div>
+                                            <div class="inputCalculateWrap">
+                                                <input class="inputCalculate" value="0" type="text">
+                                                <object class="inputCalculate__minus" data="img/icons/minus.svg" type="image/svg+xml"></object>
+                                                <object class="inputCalculate__plus" data="img/icons/plus.svg" type="image/svg+xml"></object>
+                                                <div class="minus-trigger"></div>
+                                                <div class="plus-trigger"></div>
+                                            </div>
+                                        </div>
+                                        <div class="itemFunc">
+                                            <div class="itemFunc__description">
+                                                <div class="itemFunc__description_txt">New <span>inner</span> barrel width (in.)</div>
+                                            </div>
+                                            <div class="inputCalculateWrap">
+                                                <input class="inputCalculate" value="0" type="text">
+                                                <object class="inputCalculate__minus" data="img/icons/minus.svg" type="image/svg+xml"></object>
+                                                <object class="inputCalculate__plus" data="img/icons/plus.svg" type="image/svg+xml"></object>
+                                                <div class="minus-trigger"></div>
+                                                <div class="plus-trigger"></div>
+                                            </div>
+                                        </div>
+                                        <div class="itemFunc">
+                                            <div class="itemFunc__description">
+                                                <div class="itemFunc__description_txt">Spacers (mm)</div>
+                                            </div>
+                                            <div class="inputCalculateWrap">
+                                                <input class="inputCalculate" value="0" type="text">
+                                                <object class="inputCalculate__minus" data="img/icons/minus.svg" type="image/svg+xml"></object>
+                                                <object class="inputCalculate__plus" data="img/icons/plus.svg" type="image/svg+xml"></object>
+                                                <div class="minus-trigger"></div>
+                                                <div class="plus-trigger"></div>
+                                            </div>
+                                        </div>
+                                        <div class="buttonGroup">
+                                            <div class="buttonGroup_calculate">Calculate</div>
+                                            <div class="buttonGroup_reset">Reset</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__table">
+                        <div class="button__table js-head">Table</div>
+                        <table class="tableOne js-body">
+                            <thead>
+                                <tr class="tableHead">
+                                    <td class="tableRight">Details</td>
+                                    <td>Original</td>
+                                    <td class="tableLeft">New</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="tableColorBold">Wheel Width (in.)</td>
+                                    <td>586</td>
+                                    <td>586</td>
+                                </tr>
+                                <tr class="tableRowColor">
+                                    <td class="tableColorBold">Wheel Offset (mm)</td>
+                                    <td>205</td>
+                                    <td>205</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableColorBold">Overall Offset (mm)</td>
+                                    <td>1841</td>
+                                    <td>1841</td>
+                                </tr>
+                                <tr class="tableRowColor">
+                                    <td class="tableColorBold">Arch clearance (mm)</td>
+                                    <td>103</td>
+                                    <td>103</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableColorBold">Strut clearance (mm)</td>
+                                    <td>543</td>
+                                    <td>543</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="page__scroll">
+                        <div class="button__tableSctoll js-head">Table-Scroll</div>
+                        <div class="tubTableScrol js-body">
+                            <div class="page__scroll_head">Equivalent Arch Clearance (103J et-350.9)</div>
+                            <div class="bodyTableScrol">
+                                <div class="page__scroll_left">
+                                    <table>
+                                        <tr>
+                                            <td>Wheel Width (in.)</td>
+                                        <tr>
+                                            <td>Wheel Offset (mm)</td>
+                                        <tr>
+                                            <td>RIMTUCK.com</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="page__scroll_right">
+                                    <table>
+                                        <tr>
+                                            <td>586</td>
+                                            <td>586</td>
+                                            <td>586</td>
+                                            <td>586</td>
+                                            <td>586</td>
+                                            <td>586</td>
+                                            <td>586</td>
+                                            <td>586</td>
+                                            <td>586</td>
+                                            <td>586</td>
+                                        </tr>
+                                        <tr>
+                                            <td>205</td>
+                                            <td>205</td>
+                                            <td>205</td>
+                                            <td>205</td>
+                                            <td>205</td>
+                                            <td>205</td>
+                                            <td>205</td>
+                                            <td>205</td>
+                                            <td>205</td>
+                                            <td>205</td>
+                                        </tr>
+                                        <tr>
+                                            <td>F/R</td>
+                                            <td>F/R</td>
+                                            <td>F/R</td>
+                                            <td>F/R</td>
+                                            <td>F/R</td>
+                                            <td>F/R</td>
+                                            <td>F/R</td>
+                                            <td>F/R</td>
+                                            <td>F/R</td>
+                                            <td>F/R</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__txt">
+                        <div class="page__txt_left">RIMTUCK!  ( F / R )</div>
+                        <div class="page__txt_right">
+                            <a href="#">Will They Fit?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="description">
+                    <h1 class="description__title">About the Split Rim Offset Calculator</h1>
+                    <div class="description__img">
+                        <embed class="description__img_width" src="img/disc-real.svg">
+                    </div>
+                    <div class="description__txt">The split rim offset calculator allows you to
+                        calculate the new width and offsetof your 3-piece (split rim) wheels when
+                        your change the inner barrel and/or outer lip
+                    </div>
+                    <div class="description__txt">Here are some examples that will automatically
+                        complete the calculator from to help you get started:
+                    </div>
+                    <ul class="description__list listWrap">
+                        <Li class="listWrap__item"><a class="listWrap__item_characteristic" href="#">Adding a larger
+                            outer lip to an 8J et32 wheel.</a></Li>
+                        <Li class="listWrap__item"><a class="listWrap__item_characteristic" href="#">Changing both
+                            inner
+                            and outer sections of a 10J et45 wheel.</a></Li>
+                    </ul>
+                    <div class="description__note">
+                        * Note that you do not have to fill in all the fields for the calculator to give you a
+                        result.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="marketing">
+        <div class="marketing__icon">
+            <embed src="img/icons/adwords.svg">
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="copyright">2018 Все права защищены</div>
+</footer>
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,62 @@
+.page__table{
+  margin: 0 13px 30px;
+}
+.tableOne {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-collapse: separate;
+  border-left: 0;
+  border-radius: 4px;
+  border-spacing: 0;
+  border-top: 0;
+}
+.tableOne thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-collapse: separate;
+}
+.tableHead {
+  @include font-size(16px);
+  @include line-height(25px, 16px);
+  background: $color_15;
+  color: $color_3;
+}
+.tableRight {
+  border-radius: 4px 0 0 0;
+}
+.tableLeft {
+  border-radius: 0 4px 0 0;
+}
+.tableOne tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+.tableOne td {
+  @include font-size(14px);
+  @include line-height(25px, 14px);
+  height: 45px;
+  text-align: left;
+  vertical-align: middle;
+  border-left: 1px solid $color_16;
+  padding-left: 7%;
+}
+@media(max-width: 504px){
+  .tableOne td {
+    padding-left: 2%;
+  }
+}
+.tableHead td {
+  width: 33.3%;
+  height: 50px;
+}
+.tableRowColor {
+  background: $color_17;
+}
+.tableColorBold {
+  color: $color_4;
+}
+
+
+
+

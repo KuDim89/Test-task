@@ -1,0 +1,40 @@
+@mixin Proxima-Regular {
+  font-family: 'Proxima Nova Rg';
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('../../fonts/ProximaNova-Regular/ProximaNova-Regular.eot');
+  src: url('../../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/ProximaNova-Regular/ProximaNova-Regular.woff2') format('woff2'),
+  url('../../fonts/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'),
+  url('../../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin Proxima-Bold {
+  font-family: 'Proxima Nova Rg';
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('../../fonts/ProximaNova-Bold/ProximaNova-Bold.eot');
+  src: url('../../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/ProximaNova-Bold/ProximaNova-Bold.woff2') format('woff2'),
+  url('../../fonts/ProximaNova-Bold/ProximaNova-Bold.woff') format('woff'),
+  url('../../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@mixin  font-size($px-value){
+  font-size: $px-value / $body-font-size * 1rem;
+}
+@mixin letter-spacing($px-value, $font-size) {
+  letter-spacing: $px-value / $font-size * 1em;
+}
+@mixin line-height($px-value, $font-size){
+  line-height: $px-value / $font-size;
+}
+

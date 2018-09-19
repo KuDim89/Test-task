@@ -1,0 +1,79 @@
+.page__scroll{
+  margin: 0 13px 7px;
+}
+.tableScrollHead {
+  background-color: $color_12;
+}
+.page__scroll_head {
+  @include Proxima-Bold;
+  @include font-size(16px);
+  @include line-height(25px, 16px);
+  width: 100%;
+  background-color: $color_12;
+  border-radius: 4px 4px 0 0;
+  text-align: left;
+  padding: 12px 30px 8px;
+}
+@media (max-width: 504px) {
+  .page__scroll_head {
+    padding: 12px 25px 8px;;
+  }
+}
+.bodyTableScrol {
+  display: flex;
+}
+.page__scroll_left{
+  @include font-size(14px);
+  @include line-height(25px, 14px);
+  border: 1px solid $color_12;
+  border-radius: 0 0 0 4px;
+  width: 200px ;
+}
+.page__scroll_left table {
+  width: 200px;
+}
+@media (max-width: 504px) {
+  .page__scroll_left table {
+    width: 120px;
+  }
+}
+.page__scroll_left td{
+  border-top: 1px solid $color_12;
+  padding: 10px 38px 10px 30px;
+}
+@media (max-width: 504px) {
+  .page__scroll_left td {
+    padding:  10px 2%;
+  }
+}
+.page__scroll_right{
+  border: 1px solid $color_12;
+  border-left: none;
+  border-radius: 0 0 4px 0;
+  overflow: auto;
+  height: 100%;
+}
+.page__scroll_right td {
+  border: 1px solid $color_12;
+  padding: 10px 40px 10px 30px;
+}
+.page__scroll_right td:last-child {
+  border-right: none;
+}
+.page__scroll_right td:first-child {
+  border-left: none;
+}
+.page__scroll_right::-webkit-scrollbar {
+  width: 15px;
+  border: none;
+}
+.page__scroll_right::-webkit-scrollbar-track {
+  background-color: $color_19  ;
+  border-top: 6px solid $color_3;
+  border-bottom: 6px solid $color_3;
+}
+.page__scroll_right::-webkit-scrollbar-thumb{
+  background-color: $color_18;
+}
+
+
